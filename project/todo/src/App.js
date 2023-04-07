@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div>
-      <h1>My To Dos (toDos.length)</h1>
+      <h1>My To Dos ({toDos.length})</h1>
       <form onSubmit={onSubmit}>
         <input
           onChange={onChange}
