@@ -11,6 +11,9 @@ function App() {
       return;
     }
     setToDo("");
+
+    // 값 변경시 useState 를 활용해야 재렌더링 된다.
+    // 수정이 아닌 복사 후 새로 생성해야 리액트가 변경되었다고 인식한다.
     setToDos(currentToDos => [...currentToDos, toDo])
   }
   console.log(toDos)
